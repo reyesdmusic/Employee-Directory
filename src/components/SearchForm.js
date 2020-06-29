@@ -1,8 +1,11 @@
 import React from "react";
 
 function SearchForm(props) {
-  console.log("here is the list of names" + props.names)
+
   return (
+
+    /*In datalist, show all names of either employees, departments, or roles sent in through props */
+
     <form>
       <div className="form-group">
         <label htmlFor="search">Search:</label>
@@ -12,7 +15,7 @@ function SearchForm(props) {
           name="search"
           type="text"
           className="form-control"
-          placeholder="Enter employee name"
+          placeholder="search"
           id="search"
           list="names"
         />
@@ -21,10 +24,6 @@ function SearchForm(props) {
             <option value={name} key={name} />
           ))}
         </datalist> 
-
-      
-      
-
 
         <button onClick={props.handleFormSubmit} className="btn btn-primary mt-3">
           Search
