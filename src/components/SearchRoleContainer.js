@@ -59,7 +59,7 @@ class SearchRoleContainer extends Component {
 
     // Send pertinent info to SearchForm and send the data from the user's searched role to the ResultList component
 
-    return (
+    return ( 
       <div>
         <SearchForm
           search={this.state.search}

@@ -3,9 +3,9 @@ import React from "react";
 /// Take in the results, which is an array of all employees, and create a table for each employee with all of his or her data.
  
 function ResultList(props) {
-  return (
+  return ( 
 
-    <table class="table table-hover">
+    <table className="table table-hover">
       <thead>
         <tr>
           <th>ID</th>

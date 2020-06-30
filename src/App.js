@@ -15,8 +15,9 @@ function App() {
       <div>
         <Navbar />
         <Wrapper>
+          <Route exact path="/Employee-Directory" component={About} />
           <Route exact path="/" component={About} />
-          <Route exact path="/about" component={About} />
+          {/* <Route exact path="/about" component={About} /> */}
           <Route exact path="/employees" component={Employees} />
           <Route exact path="/search" component={Search} />
           <Route exact path="/searchDepartment" component={SearchDepartment} />
